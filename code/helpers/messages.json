@@ -1,0 +1,11 @@
+{
+  "something_went_wrong": "Something went wrong. please try again later.",
+  "record_available": "Records are available.",
+  "record_not_available": "Records are not available.",
+  "record_updated": "Records updated successfully.",
+  "record_update_failed": "Failed to update records.",
+  "record_deleted": "Records deleted successfully.",
+  "record_delete_failed": "Failed to delete records.",
+  "required_parameters_null_or_missing": "Required parameters value null or missing.",
+  "id_is_empty": "Id is required."
+}

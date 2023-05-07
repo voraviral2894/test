@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "c6f451e6-df1e-49a6-9281-bced2fc0c969",
+		"name": "Songs App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19964793"
+	},
+	"item": [
+		{
+			"name": "Get list of random songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/songs/?page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"songs",
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get song details by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/songs/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"songs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete song by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/songs/31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"songs",
+						"31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update song details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test Song 1\",\r\n    \"album_name\": \"Test album 1\",\r\n    \"type\": \"v\",\r\n    \"length\": 3.5,\r\n    \"media_url\": \"https://www.youtube.com/watch?v=77YwsoKsNV8\",\r\n    \"cover_image\": null,\r\n    \"category\": 1,\r\n    \"artists\": \"1,5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/songs/31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"songs",
+						"31"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
